@@ -17,7 +17,9 @@ public class Lab1cw1 extends JPanel {
 			
 			// Moves (0,0) to the center of the display.
 			int whichTransform = transformSelect.getSelectedIndex();
+			//tworzymy obiekt poligon
 			Polygon p = new Polygon();
+			//pętla który tworzy 8-kąt
 			for(int i=0;i<8;i++)
 			{
 				p.addPoint((int) (100 * Math.cos(i*2* Math.PI / 8)), (int) (100 * Math.sin(i*2* Math.PI / 8)) );
@@ -25,6 +27,8 @@ public class Lab1cw1 extends JPanel {
 			}
 			
 			// TODO Apply transforms here, depending on the value of whichTransform!
+			// W tym miejscu wykonujemy przekształcenia naszego kształtu według wariantów zadania.
+		
 			if (whichTransform == 1)
 			{
 				g2.scale(0.5, 0.5);
@@ -90,9 +94,10 @@ public class Lab1cw1 extends JPanel {
 			}
 			
 			
-		
+			// Rysowanie poligonu
 			g2.drawPolygon(p); // Draw image with center at (0,0).
 			g2.setColor(Color.BLACK);
+			// Rysowanie poligonu
 			g2.fillPolygon(p);
 		}
 	}
