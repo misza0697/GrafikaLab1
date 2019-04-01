@@ -57,12 +57,9 @@ public class Lab1Cw2 extends JPanel {
 
 		/* ----------------------------------------------------------------------- */
 		
-		// REMOVE THE FOLLOWING CODE, which draws a big red X in the upper right quadrant,
-		// and insert your own code to draw the required pictures in the four quadrants.
+	
 
-		// The next two line scale the X to be twice the original size
-		// and then moves the center of the X from (0,0) to (450,150).
-
+		//rysowanie kształtów litery Z, skalowanie i powrót do oryginalnej skali
 		g2.translate(450,150);
 		g2.scale(2,2);
 
